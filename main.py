@@ -19,9 +19,9 @@
 #         continue
 #     print(i)
 
-# for i in range(1, 11):
-#     print(i)
-#     if i > 15:
-#         break
-# else:
-#     print(11)
+for i in range(1, 11):
+    print(i)
+    if i > 15:
+        break
+else:
+    print(11)
