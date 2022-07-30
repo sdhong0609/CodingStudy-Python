@@ -1,20 +1,9 @@
-# n = int(input())
-# for i in range(1, n + 1):
-#     print(i)
+# for i in range(5):
+#     for j in range(i+1):
+#         print("*", end=" ")
+#     print()
 
-# n = int(input())
-# for i in range(1, n + 1):
-#     if i % 2 == 1:
-#         print(i)
-
-# n = int(input())
-# sum = 0
-# for i in range(1, n + 1):
-#     sum = sum + i
-#
-# print(sum)
-
-n = int(input())
-for i in range(1, n + 1):
-    if n % i == 0:
-        print(i, end=" ")
+for i in range(5):
+    for j in range(5-i):
+        print("*", end=" ")
+    print()
