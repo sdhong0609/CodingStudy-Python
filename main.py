@@ -1,27 +1,20 @@
-# a = range(1, 11)
-# print(list(a))
+# n = int(input())
+# for i in range(1, n + 1):
+#     print(i)
+
+# n = int(input())
+# for i in range(1, n + 1):
+#     if i % 2 == 1:
+#         print(i)
+
+# n = int(input())
+# sum = 0
+# for i in range(1, n + 1):
+#     sum = sum + i
 #
-# for i in range(1, 11):
-#     print(i)
+# print(sum)
 
-# for i in range(10, 0, -2):
-#     print(i)
-
-# i = 1
-# while True:
-#     print(i)
-#     if i == 5:
-#         break
-#     i += 1
-
-# for i in range(1, 11):
-#     if i % 2 == 0:
-#         continue
-#     print(i)
-
-for i in range(1, 11):
-    print(i)
-    if i > 15:
-        break
-else:
-    print(11)
+n = int(input())
+for i in range(1, n + 1):
+    if n % i == 0:
+        print(i, end=" ")
