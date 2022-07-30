@@ -1,45 +1,53 @@
-# msg = "It is Time"
-# print(msg.upper())
-# print(msg.lower())
-# print(msg)
-# tmp = msg.upper()
-# print(tmp)
-# print(tmp.find("T"))
-# print(tmp.count('T'))
-# print(msg)
-# print(msg[:2])
-# print(msg[3:5])
-# print(len(msg))
-# for i in range(len(msg)):
-#     print(msg[i], end=' ')
-# print()
-#
-# for x in msg:
-#     print(x, end=' ')
-# print()
-#
-# for x in msg:
-#     if x.isupper():
-#         print(x, end=' ')
-# print()
-#
-# for x in msg:
-#     if x.islower():
-#         print(x, end=' ')
-# print()
-#
-# for x in msg:
-#     if x.isalpha():
-#         print(x, end='')
-# print()
+import random as r
 
-tmp = "AZ"
-for x in tmp:
-    print(ord(x))
+# a = []
+# print(a)
+#
+# b = list()
+# print(b)
+#
+# a = [1, 2, 3, 4, 5]
+# print(a)
+# print(a[0])
+#
+# b = list(range(1, 11))
+# print(b)
+#
+# c = a + b
+# print(c)
 
-tmp = "az"
-for x in tmp:
-    print(ord(x))
+# a = [1, 2, 3, 4, 5]
+# print(a)
+# a.append(6)
+# print(a)
+#
+# a.insert(3, 7)
+# print(a)
+#
+# a.pop()
+# print(a)
+# a.pop(3)
+# print(a)
+#
+# a.remove(4)
+# print(a)
+#
+# print(a.index(5))
 
-tmp = 66
-print(chr(tmp))
+a = list(range(1, 11))
+# print(a)
+# print(sum(a))
+# print(max(a))
+# print(min(a))
+# print(min(7, 5))
+# print(min(7, 3, 5))
+print(a)
+r.shuffle(a)
+print(a)
+
+a.sort(reverse=True)
+print(a)
+a.sort()
+print(a)
+a.clear()
+print(a)
