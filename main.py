@@ -1,17 +1,19 @@
-# a = [0] * 3
-# print(a)
+# def add(a, b):
+#     c = a + b
+#     d = a - b
+#     return c, d
+#
+#
+# print(add(3, 2))
 
-a = [[0] * 3 for _ in range(3)]
-# print(a)
-a[0][1] = 1
-# print(a)
-a[1][1] = 2
-# print(a)
+def isPrime(x):
+    for i in range(2, x):
+        if x % i == 0:
+            return False
+    return True
 
-for x in a:
-    print(x)
 
-for x in a:
-    for y in x:
+a = [12, 13, 7, 9, 19]
+for y in a:
+    if isPrime(y):
         print(y, end=' ')
-    print()
