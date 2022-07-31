@@ -1,53 +1,41 @@
-import random as r
+# a = [23, 12, 36, 53, 19]
+# print(a[:3])
+# print(a[1:4])
+# print(len(a))
+#
+# for i in range(len(a)):
+#     print(a[i], end=' ')
+# print()
+#
+# for x in a:
+#     if x % 2 == 1:
+#         print(x, end=' ')
+# print()
 
-# a = []
-# print(a)
-#
-# b = list()
-# print(b)
-#
-# a = [1, 2, 3, 4, 5]
-# print(a)
-# print(a[0])
-#
-# b = list(range(1, 11))
-# print(b)
-#
-# c = a + b
-# print(c)
+# a = [23, 12, 36, 53, 19]
+# for x in enumerate(a):
+#     print(x)
 
-# a = [1, 2, 3, 4, 5]
-# print(a)
-# a.append(6)
-# print(a)
-#
-# a.insert(3, 7)
-# print(a)
-#
-# a.pop()
-# print(a)
-# a.pop(3)
-# print(a)
-#
-# a.remove(4)
-# print(a)
-#
-# print(a.index(5))
+# b = (1, 2, 3, 4, 5)
+# print(b[0])
+# b[0] = 7
 
-a = list(range(1, 11))
-# print(a)
-# print(sum(a))
-# print(max(a))
-# print(min(a))
-# print(min(7, 5))
-# print(min(7, 3, 5))
-print(a)
-r.shuffle(a)
-print(a)
+# for x in enumerate(a):
+#     print(x[0], x[1])
+# print()
 
-a.sort(reverse=True)
-print(a)
-a.sort()
-print(a)
-a.clear()
-print(a)
+a = [23, 12, 36, 53, 19]
+
+for index, value in enumerate(a):
+    print(index, value)
+print()
+
+if all(x < 60 for x in a):
+    print("YES")
+else:
+    print("NO")
+
+if any(x < 11 for x in a):
+    print("YES")
+else:
+    print("NO")
