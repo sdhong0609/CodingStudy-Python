@@ -1,19 +1,16 @@
-# def add(a, b):
-#     c = a + b
-#     d = a - b
-#     return c, d
+# def plus_one(x):
+#     return x + 1
 #
 #
-# print(add(3, 2))
+# print(plus_one(1))
 
-def isPrime(x):
-    for i in range(2, x):
-        if x % i == 0:
-            return False
-    return True
+# plus_two = lambda x: x + 2
+# print(plus_two(1))
+
+def plus_one(x):
+    return x + 1
 
 
-a = [12, 13, 7, 9, 19]
-for y in a:
-    if isPrime(y):
-        print(y, end=' ')
+a = [1, 2, 3]
+print(list(map(plus_one, a)))
+print(list(map(lambda x: x + 1, a)))
