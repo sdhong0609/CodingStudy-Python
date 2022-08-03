@@ -1,16 +1,14 @@
-# def plus_one(x):
-#     return x + 1
-#
-#
-# print(plus_one(1))
+arr = [5, 3, 7, 9, 2, 5, 2, 6]
 
-# plus_two = lambda x: x + 2
-# print(plus_two(1))
+# arrMin = float('inf')  # python 에서 가장 큰 값 (무한대)
+arrMin = arr[0]
+for i in range(len(arr)):
+    if arr[i] < arrMin:
+        arrMin = arr[i]
+print(arrMin)
 
-def plus_one(x):
-    return x + 1
-
-
-a = [1, 2, 3]
-print(list(map(plus_one, a)))
-print(list(map(lambda x: x + 1, a)))
+arrMin = float('inf')
+for x in arr:
+    if x < arrMin:
+        arrMin = x
+print(arrMin)
