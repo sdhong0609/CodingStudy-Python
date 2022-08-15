@@ -1,9 +1,13 @@
-# K번째 수
+# 정다면체
 
-t = int(input())
-for i in range(t):
-    n, s, e, k = map(int, input().split())
-    arr = list(map(int, input().split()))
-    arr2 = arr[s-1:e]
-    arr2.sort()
-    print("#"+str(i+1), arr2[k-1])
+n, m = map(int, input().split())
+arr = [0]*(n+m+1)
+
+for i in range(1, n+1):
+    for j in range(1, m+1):
+        arr[i+j] += 1
+
+for i, x in enumerate(arr):
+    if x == max(arr):
+        print(i, end=' ')
+
