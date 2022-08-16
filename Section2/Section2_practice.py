@@ -1,13 +1,13 @@
-# 정다면체
+# 소수(에라토스테네스 체)
 
-n, m = map(int, input().split())
-arr = [0]*(n+m+1)
+n = int(input())
+ch = [0]*(n+1)
+cnt = 0
+a = int(n**(1/2)+1) # 4 < 루트20 < 5
 
-for i in range(1, n+1):
-    for j in range(1, m+1):
-        arr[i+j] += 1
-
-for i, x in enumerate(arr):
-    if x == max(arr):
-        print(i, end=' ')
-
+for i in range(2, n+1):
+    if ch[i] == 0:
+        cnt += 1
+        for j in range(i, n+1, i):
+            ch[j] = 1
+print(cnt)
