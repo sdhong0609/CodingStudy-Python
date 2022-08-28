@@ -1,17 +1,18 @@
 # 점수계산
 
 # 내 풀이
-# n = int(input())
-# arr = list(map(int, input().split()))
-# count, score = 1, 0
-#
-# for x in arr:
-#     if x == 1:
-#         score += count
-#         count += 1
-#     else:
-#         count = 1
-# print(score)
+n = int(input())
+a = list(map(int, input().split()))
+score = 0
+res = 0
+
+for x in a:
+    if x == 1:
+        score += 1
+        res += score
+    else:
+        score = 0
+print(res)
 
 
 # 강사 풀이
