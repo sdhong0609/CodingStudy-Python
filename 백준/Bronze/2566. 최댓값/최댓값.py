@@ -1,10 +1,15 @@
-a = [list(map(int, input().split())) for _ in range(9)]
-max_list = []
-j_list = []
-for x in a:
-    j_list.append(x.index(max(x)))
-    max_list.append(max(x))
+import sys
+input = sys.stdin.readline
 
-m = max(max_list)
-print(m)
-print(max_list.index(m)+1, j_list[max_list.index(m)]+1)
+board = [list(map(int, input().split())) for _ in range(9)]
+x, y = 0, 0
+max = -1
+
+for i in range(9):
+    for j in range(9):
+        if board[i][j] > max:
+            max = board[i][j]
+            x = i+1
+            y = j+1
+print(max)
+print(x, y)
