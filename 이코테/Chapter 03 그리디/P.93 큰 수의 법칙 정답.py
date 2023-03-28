@@ -1,3 +1,5 @@
+""" P.93 큰 수의 법칙 정답"""
+
 """ 풀이 1 """
 # n, m, k = map(int, input().split())
 # data = list(map(int, input().split()))

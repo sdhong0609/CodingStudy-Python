@@ -1,3 +1,5 @@
+""" P.97 숫자 카드 게임 """
+
 """ 내 풀이 """
 # n, m = map(int, input().split())
 # cards = [list(map(int, input().split())) for _ in range(n)]
