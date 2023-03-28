@@ -1,6 +1,5 @@
-""" 미로 탈출 """
+""" P.153 미로 탈출 정답 """
 
-""" 책 풀이 """
 from collections import deque
 
 n, m = map(int, input().split())
