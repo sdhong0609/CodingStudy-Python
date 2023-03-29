@@ -1,4 +1,4 @@
-""" 두 배열의 원소 교체 """
+""" P.182 두 배열의 원소 교체 정답 """
 
 n, k = map(int, input().split())
 a = list(map(int, input().split()))
