@@ -9,7 +9,6 @@ for _ in range(t):
 
     for i in range(1, k + 1):
         for j in range(1, n + 1):
-            for x in range(1, j + 1):
-                d[i][j] += d[i - 1][x]
+            d[i][j] = d[i-1][j] + d[i][j-1]
 
     print(d[k][n])
