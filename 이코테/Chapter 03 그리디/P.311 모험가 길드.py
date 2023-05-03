@@ -10,7 +10,6 @@ gongPoDo = list(map(int, input().split()))
 count = 0
 
 gongPoDo.sort()  # 오름차순 정렬 (큰 수가 뒤로)
-print(gongPoDo)
 
 # 최댓값을 구하고 공포도가 높은 인원을 그 그룹에 배치해야 한다
 while True:

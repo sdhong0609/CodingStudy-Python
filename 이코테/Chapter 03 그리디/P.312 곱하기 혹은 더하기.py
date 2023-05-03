@@ -14,3 +14,13 @@ for i in range(1, len(s)):
         result *= s[i]
 
 print(result)
+
+# 입력 1
+# 02984
+# 출력 1
+# 576
+
+# 입력 2
+# 567
+# 출력 2
+# 210
