@@ -18,6 +18,5 @@ else:
     for card in cards:
         diff.append(n - card[0])
     diff.sort()
-    for i in range(target):
-        result += diff[i]
+    result += sum(diff[:target])
     print(result)
